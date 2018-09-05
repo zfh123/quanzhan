@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store/'
 
 Vue.config.productionTip = false
 import appConfig from './appConfig.js'
@@ -23,6 +24,7 @@ Object.keys(Components).forEach((key) => {
 new Vue({
   el: '#app',
   router,
+  store,
   data(){
     return{
 
@@ -40,6 +42,6 @@ new Vue({
   methods:{
 
   },
-  components: { App },
-  template: '<App/>'
+  // components: { App },
+  template: '<router-view/>'
 })

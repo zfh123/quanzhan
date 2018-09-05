@@ -26,8 +26,7 @@ export function fetch(url, params = {}) {
         url: url,
         params: params,
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'platform': 'PC',
+            
         }
     });
 }
@@ -44,8 +43,7 @@ export function post(url, data = {}) {
         url: url,
         data: qs.stringify(data, { allowDots: true }),
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'platform': 'PC',
+            
         }
     });
 }
@@ -63,8 +61,7 @@ export function patch(url, data = {}) {
         url: url,
         data: data,
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'platform': 'PC',
+            
         }
     });
 }
@@ -82,8 +79,7 @@ export function put(url, data = {}) {
         url: url,
         data: data,
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'platform': 'PC',
+            
         }
     });
 }
