@@ -17,11 +17,19 @@ export default new Router({
     {
       path: '/registed/scen',
       name: 'RegistedScen',
+      meta: {auth: false},
       component: load('pages/sceneRegisted/index')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      meta: {auth: false},
+      component: load('pages/login/index')
     },
     {
       path: '/',
       name: 'HelloWorld',
+      meta: {auth: false},
       component: load('components/HelloWorld')
     }
   ]
