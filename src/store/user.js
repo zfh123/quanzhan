@@ -1,4 +1,3 @@
-import Vue from 'vue'
 export const CART_INSERT = 'CART_INSERT';
 export const CART_REMOVER = 'CART_REMOVER';
 

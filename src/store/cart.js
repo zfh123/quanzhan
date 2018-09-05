@@ -1,4 +1,3 @@
-import Vue from 'vue'
 export const USER_SIGNIN = 'USER_SIGNIN'; //登录
 export const USER_SIGNOUT = 'USER_SIGNOUT'; //退出
 
