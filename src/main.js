@@ -7,6 +7,12 @@ import store from './store/'
 
 Vue.config.productionTip = false
 import appConfig from './appConfig.js'
+import { post, fetch, patch, put } from "./utils/http";
+
+Vue.prototype.$post = post;
+Vue.prototype.$fetch = fetch;
+Vue.prototype.$patch = patch;
+Vue.prototype.$put = put;
 
 import __components from './__components/' //加载公共组件
 Object.keys(__components).forEach((key) => {
